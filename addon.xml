@@ -1,17 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.llamaapps.searchpro" name="SearchPro" version="1.0.0-beta" provider-name="idealkooks / Team Th">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>Search Pro</summary>
-    <description>Search everything in Kodi</description>
+<addon id="script.idealkooks.searchpro" version="1.0.0" name="SearchPro" provider-name="idealkooks">
+    <summary>Search through all your Kodi files and addons</summary>
+    <description>Search all your Kodi setup including addons and files using SearchPro. Licensed under the Apache 2.0 License.</description>
     <platform>all</platform>
-    <license>Apache License 2.0</license>
-  </extension>
-  <extension point="xbmc.addon.settings" library="resources/lib/settings.xml"/>
-  <icon>resources/icon.png</icon>
+    <language>en</language>
+    
+    <!-- Addon License -->
+    <license>Apache 2.0</license>
+
+    <!-- Main script entry -->
+    <extension point="xbmc.python.script" library="resources/lib/default.py"/>
+
+    <!-- Addon settings -->
+    <extension point="xbmc.addon.settings">
+        <settings file="resources/lib/settings.xml"/>
+    </extension>
+    
+    <icon>resources/icon.png</icon>
 </addon>
