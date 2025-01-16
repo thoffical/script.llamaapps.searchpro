@@ -1,0 +1,14 @@
+<settings>
+    <!--
+    License: Apache 2.0 License
+    You may obtain a copy of the License at:
+    http://www.apache.org/licenses/LICENSE-2.0
+    -->
+
+    <category label="Search Settings">
+        <setting id="search_files" type="bool" label="Search Files" default="true" />
+        <setting id="search_addons" type="bool" label="Search Addons" default="true" />
+        <setting id="file_extensions" type="text" label="File Extensions (comma-separated)" default="txt,log,xml" />
+        <setting id="addon_directories" type="text" label="Addon Directories to Search (comma-separated)" default="scripts,plugins" />
+    </category>
+</settings>
