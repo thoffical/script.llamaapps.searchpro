@@ -1,4 +1,4 @@
-<addon id="script.idealkooks.searchpro" version="1.0.0" name="SearchPro" provider-name="idealkooks">
+<addon id="script.idealkooks.searchpro" version="1.0.2" name="SearchPro" provider-name="idealkooks">
     <summary>Search through all your Kodi files and addons</summary>
     <description>Search all your Kodi setup including addons and files using SearchPro. Licensed under the Apache 2.0 License.</description>
     <platform>all</platform>
