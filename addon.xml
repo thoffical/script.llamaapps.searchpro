@@ -3,8 +3,8 @@
     <description>Search all your Kodi setup including addons and files using SearchPro. Licensed under the Apache 2.0 License.</description>
     <platform>all</platform>
     <language>en</language>
-    
-    <!-- Addon License -->
+
+    <!-- License -->
     <license>Apache 2.0</license>
 
     <!-- Main script entry -->
@@ -15,5 +15,5 @@
         <settings file="resources/lib/settings.xml"/>
     </extension>
     
-    <icon>resources/icon.png</icon>
+    <icon>icon.png</icon>
 </addon>
