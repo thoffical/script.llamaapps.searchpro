@@ -12,7 +12,7 @@
 
     <!-- Addon settings -->
     <extension point="xbmc.addon.settings">
-        <settings file="resources/lib/settings.xml"/>
+        <settings file="resources/settings.xml"/>
     </extension>
     
     <icon>icon.png</icon>
