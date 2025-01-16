@@ -9,6 +9,7 @@ search_movies = addon.getSetting("search_movies") == "true"
 search_tvshows = addon.getSetting("search_tvshows") == "true"
 search_music = addon.getSetting("search_music") == "true"
 search_videos = addon.getSetting("search_videos") == "true"
+search_addons = addon.getSetting("search_addons") == "true"
 
 def search(query):
     results = []
@@ -20,6 +21,8 @@ def search(query):
         results.extend(search_music(query))
     if search_videos:
         results.extend(search_videos(query))
+    if search_addons:
+        results.extend(search_addons(query))
     return results
 
 def search_movies(query):
@@ -49,9 +52,4 @@ def search_music(query):
     response = json.loads(response)
     results = []
     for song in response["result"]["songs"]:
-        results.append({"label": song["title"], "type": "song", "id": song["songid"]})
-    return results
-
-def search_videos(query):
-    # Search videos
-    xbmc.executeJSONRPC('{"jsonrpc": "2.0", "method": "VideoLibrary.Get
+        results.append({"label": song["title"], "type
